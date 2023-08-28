@@ -48,7 +48,7 @@ function post(data){
             let SeriesEpisode = series.episodes
 
             const div = document.createElement('div')
-            let seriesDiv = `<div class="card card-side bg-base-100 shadow-xl p-3 grid grid-cols-3 items-center h-[500px] overflow-scroll">
+            let seriesDiv = `<div class="card card-side bg-base-100 shadow-xl p-3 grid grid-cols-3 items-center h-[500px] overflow-hidden ">
             <img src=${seriesImage} class="col-span-1"/>
             <div class="card-body  col-span-2">
             <h2 class="card-title">${seriesName}</h2>
