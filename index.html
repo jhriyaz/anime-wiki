@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.gif" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="overflow-hidden">
+
+    <header >
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a href="/" class="w-20"> <img src="./images/logo.gif" alt=""></a>
+                </div>
+                <div class="navbar-end ">
+                    <div class="border-teal-300 rounded-lg">
+                        <!-- border-2 -->
+                       
+                    <button class="btn btn-ghost btn-circle"  id="searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="teal">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="searchInput" placeholder="Type here" class="input input-bordered input-success w-32 max-w-xs text-center border-0 hidden " style="outline:none" />
+        </nav>
+    </header>
+<main>
+<div class="container grid grid-cols-1 lg:grid-cols-3 m-auto gap-3" id="seriesContainer">
+
+
+</div>
+
+
+</main>
+
+
+
+    <script src="./js/fetch.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
